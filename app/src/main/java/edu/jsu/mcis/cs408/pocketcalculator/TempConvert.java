@@ -12,6 +12,33 @@ import android.view.ViewGroup;
  * A simple {@link Fragment} subclass.
  * Use the {@link TempConvert#newInstance} factory method to
  * create an instance of this fragment.
+ *
+ * create fragment calls to other fragments, starts at 0
+ */
+
+/* conversion code
+public void onClick(View v){
+
+String f = binding.inputF.getText().toString();
+String c = binding.inputC.getText().toString();
+
+ if (f.equals("")) {
+    if (!c.equals("")) {
+
+    double celsius = Double.parseDouble(c);
+    double fahrenheit = Double.parseDouble(f);
+
+    binding.inputF.setText(Double.toString(fahrenheit)) ;
+        }
+      }
+   else {
+    double fahrenheit = Double.parseDouble(f);
+    double celsius = ((fahrenheit - 32) * (5.0 / 9.0));
+
+    binding.inputC.setText(Double.toString(celsius))
+
+
+
  */
 public class TempConvert extends Fragment {
 
